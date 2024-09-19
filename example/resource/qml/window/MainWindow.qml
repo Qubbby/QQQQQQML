@@ -24,7 +24,11 @@ FluWindow {
         darkText: Lang.dark_mode
         showDark: true
         darkClickListener:(button)=>handleDarkChanged(button)
-        closeClickListener: ()=>{dialog_close.open()}
+        closeClickListener: ()=>{
+            // dialog_close.open()
+            system_tray.showMessage("友情提示","FluentUI已隐藏至托盘,点击托盘可再次激活窗口");
+            timer_window_hide_delay.restart()
+        }
         z:7
     }
 
