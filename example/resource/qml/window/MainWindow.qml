@@ -346,7 +346,7 @@ FluWindow {
         negativeText: "取消"
         positiveText:"确定"
         onPositiveClicked:{
-            Qt.openUrlExternally("https://github.com/zhuzichu520/FluentUI/releases/latest")
+            Qt.openUrlExternally("https://github.com/qubbby/example/releases/latest")
         }
     }
 
@@ -386,7 +386,7 @@ FluWindow {
 
     function checkUpdate(silent){
         callable.silent = silent
-        FluNetwork.get("https://api.github.com/repos/zhuzichu520/FluentUI/releases/latest")
+        FluNetwork.get("https://api.github.com/repos/qubbby/example/releases/latest")
         .go(callable)
     }
 
