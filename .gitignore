@@ -6,3 +6,4 @@ build
 dist
 action-cli
 example/version.py
+.venv/

@@ -37,7 +37,7 @@ def main():
     app = QGuiApplication(sys.argv)
     app.setOrganizationName("Quby")
     app.setOrganizationDomain("https://www.google.com")
-    app.setApplicationName("test")
+    app.setApplicationName("example")
 
     engine = QQmlApplicationEngine()
     rootContext = engine.rootContext()
