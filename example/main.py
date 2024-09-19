@@ -3,7 +3,6 @@ import sys
 import os
 from PySide6.QtCore import QProcess
 from PySide6.QtQuick import QQuickWindow,QSGRendererInterface
-from PySide6.QtNetwork import QNetworkProxy
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
 
@@ -21,8 +20,9 @@ import FluentUI
 
 from helper.SettingsHelper import SettingsHelper
 from AppInfo import AppInfo
+
 # 注册资源以及自定义的QML组件
-import resource.example_rc as rc
+import resource.example_rc
 from component.CircularReveal import CircularReveal
 from component.FileWatcher import FileWatcher
 from component.FpsItem import FpsItem
@@ -32,27 +32,32 @@ def main():
     Log.setup("example")
     QQuickWindow.setGraphicsApi(QSGRendererInterface.GraphicsApi.OpenGL)
     os.environ["QT_QUICK_CONTROLS_STYLE"] = "Basic"
-    QGuiApplication.setOrganizationName("ZhuZiChu")
-    QGuiApplication.setOrganizationDomain("https://zhuzichu520.github.io")
-    QGuiApplication.setApplicationName("FluentUI")
     SettingsHelper().init()
+
     app = QGuiApplication(sys.argv)
+    app.setOrganizationName("Quby")
+    app.setOrganizationDomain("https://www.google.com")
+    app.setApplicationName("test")
+
     engine = QQmlApplicationEngine()
     rootContext = engine.rootContext()
     rootContext.setContextProperty("SettingsHelper", SettingsHelper())
     rootContext.setContextProperty("AppInfo", AppInfo())
+    
     FluentUI.init(engine)
     print(engine.importPathList())
     qml_file = "qrc:/example/qml/App.qml"
     engine.load(qml_file)
     if not engine.rootObjects():
         sys.exit(-1)
-    exec = app.exec()
-    if(exec == 931):
+
+    exit_code = app.exec()
+    if(exit_code == 931):
         #QGuiApplication.applicationFilePath()需要打包成exe后才能正确的路径重启，不然这个函数获取的路径是python的路径
         args = QGuiApplication.arguments()[1:]
         QProcess.startDetached(QGuiApplication.applicationFilePath(),args)
-    return exec
+    
+    sys.exit(exit_code)
 
 if __name__ == "__main__":
     main()
