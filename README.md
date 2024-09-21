@@ -9,8 +9,6 @@
   The original project <a href="https://github.com/zhuzichu520/PySide6-FluentUI-QML">FluentUI</a> has stopped maintenance, so secondary development is planned.
 </p>
 
-![win-badge] ![ubuntu-badge] ![macos-badge]
-
 <div align=center>
   <img src="doc/preview/demo_large.png">
 </div>
@@ -57,7 +55,3 @@ View more [`here`](doc/md/all_components.md)!
 ## License
 
 This FluentUI library currently licensed under [GPL-3.0 License](./License)
-
-## Star History
-
-[![Star History Chart](https://github.com/Qubbby/example&type=Date)](https://github.com/Qubbby/example&Date)
