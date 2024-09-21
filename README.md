@@ -54,4 +54,4 @@ View more [`here`](doc/md/all_components.md)!
 
 ## License
 
-This FluentUI library currently licensed under [GPL-3.0 License](./License)
+This FluentUI library currently licensed under [GPL-3.0 License](./LICENSE)
