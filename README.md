@@ -6,34 +6,18 @@
   QML FluentUI 
 </h1>
 <p align="center">
-  A fluent design component library for Qt QML， You need C++ <a href="https://github.com/zhuzichu520/FluentUI">FluentUI</a>。
+  The original project <a href="https://github.com/zhuzichu520/PySide6-FluentUI-QML">FluentUI</a> has stopped maintenance, so secondary development is planned.
 </p>
 
-![win-badge] ![ubuntu-badge] ![macos-badge] ![release-badge] ![download-badge] ![download-latest]
+![win-badge] ![ubuntu-badge] ![macos-badge]
 
-<p align="center">
-English | <a href="README_zh_CN.md">简体中文</a>
-</p>
 <div align=center>
   <img src="doc/preview/demo_large.png">
 </div>
 
-[win-link]: https://github.com/zhuzichu520/FluentUI/actions?query=workflow%3AWindows "WindowsAction"
-[win-badge]: https://github.com/zhuzichu520/FluentUI/workflows/Windows/badge.svg  "Windows"
-[ubuntu-link]: https://github.com/zhuzichu520/FluentUI/actions?query=workflow%3AUbuntu "UbuntuAction"
-[ubuntu-badge]: https://github.com/zhuzichu520/FluentUI/workflows/Ubuntu/badge.svg "Ubuntu"
-[macos-link]: https://github.com/zhuzichu520/FluentUI/actions?query=workflow%3AMacOS "MacOSAction"
-[macos-badge]: https://github.com/zhuzichu520/FluentUI/workflows/MacOS/badge.svg "MacOS"
-[release-link]: https://github.com/zhuzichu520/FluentUI/releases "Release status"
-[release-badge]: https://img.shields.io/github/release/zhuzichu520/FluentUI.svg?style=flat-square "Release status"
-[download-link]: https://github.com/zhuzichu520/FluentUI/releases/latest "Download status"
-[download-badge]: https://img.shields.io/github/downloads/zhuzichu520/FluentUI/total.svg "Download status"
-[download-latest]: https://img.shields.io/github/downloads/zhuzichu520/PySide6-FluentUI-QML/latest/total.svg "latest status"
-
 ## Requirements
 
 + PySide6
-+ PySide-FluentUI-QML
 
 ## ⚽ Get started
 
@@ -72,11 +56,8 @@ View more [`here`](doc/md/all_components.md)!
 
 ## License
 
-This FluentUI library currently licensed under [MIT License](./License)
+This FluentUI library currently licensed under [GPL-3.0 License](./License)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=zhuzichu520/PySide6-FluentUI-QML&type=Date)](https://star-history.com/#zhuzichu520/PySide6-FluentUI-QML&Date)
-
-## ⚡ Visitor count
-![](https://profile-counter.glitch.me/zhuzichu520-PySide6-FluentUI-QML/count.svg)
+[![Star History Chart](https://github.com/Qubbby/example&type=Date)](https://github.com/Qubbby/example&Date)
